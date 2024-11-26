@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --background_color: #262626;
+  --enfasis: #91a8d1;
+  --enfasis_transparente: #91a9d1a1;
+  --background_color_transparente: #262626ce;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../../assets/bg_principal.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+a {
+  text-decoration: none;
+}
+.content_buttons_action {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.content_buttons_action a {
+  padding: 1% 3%;
+  background: var(--enfasis);
+  border-radius: 10px;
+  color: antiquewhite;
+}
+h2 {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
+  color: var(--enfasis);
+}
+p {
+  color: #ffffffbe;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("/assets/Primer-background-vertical.svg");
+  }
+  section > .datos_section > div > h2,
+  .section_class_2 > h2,
+  article > div > h2,
+  section > div > h2 {
+    position: sticky;
+    top: 12%;
+    background: linear-gradient(
+      var(--background_color_transparente) 90%,
+      transparent
+    );
+    padding: 2% 5%;
+    border-radius: 10px;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--enfasis_transparente);
+    border-bottom-style: solid;
+    backdrop-filter: blur(10px);
+    z-index: 90;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 0px 40px 5px rgba(247, 247, 247, 0.6);
+  }
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="/assets/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/css/header.css" />
+    <link rel="stylesheet" href="/src/css/frontPage.css" />
+    <link rel="stylesheet" href="/src/css/home.css" />
+    <link rel="stylesheet" href="/src/css/swiperCards.css" />
+    <!-- API DE SWIPER JS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header data-aos-duration="1500" data-aos="fade-down">
+      <div
+        class="info_header"
+        style="
+          background: yellow;
+          width: 100%;
+          text-align: center;
+          padding: 1% 0;
+          font-size: 1.5rem;
+        "
+      >
+        <h6>
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> En
+          Construcción
+        </h6>
+      </div>
+      <div class="content_header">
+        <div class="content_nombre">
+          <div class="content_logo">
+            <img src="/assets/logo.svg" alt="" />
+          </div>
+          <h1>MI WebSite</h1>
+        </div>
+        <label for="mostrarMenu">Menu</label>
+        <input type="checkbox" id="mostrarMenu" />
+        <nav>
+          <div id="menu_1">
+            <a href=""> <i class="fa-solid fa-house"></i>Inicio</a
+            ><label for="check">˅</label>
+            <input type="checkbox" name="" id="check" />
+            <div>
+              <a href="">Ruta 1</a>
+              <a href="">Ruta 2</a>
+              <a href="">Ruta 3</a>
+            </div>
+          </div>
+          <div><a href="Información">Información</a></div>
+
+          <div id="menu_2">
+            <a href="">Servicios</a><label for="check2">˅</label>
+            <input type="checkbox" name="" id="check2" />
+            <div>
+              <a href="">Ruta 1</a>
+              <a href="">Ruta 2</a>
+              <a href="">Ruta 3</a>
+            </div>
+          </div>
+          <div id="menu_3">
+            <a href="">Testimonios</a>
+          </div>
+          <div id="menu_4">
+            <a href="">Blog</a><label for="check4">˅</label>
+            <input type="checkbox" name="" id="check4" />
+            <div>
+              <a href="">Recientes</a>
+              <a href="">Populares</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="front_page">
+      <div data-aos="fade-right" data-aos-duration="1500">
+        <h2>Hola,</h2>
+        <h1>Yo soy Ronald</h1>
+        <h3>Ciudadana del mundo</h3>
+        <p>Misión pequeña:</p>
+        <div class="content_buttons_action">
+          <a href="#more">
+            Ver Más <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="content_logo_front_page"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
+        <img src="" alt="Imagen" />
+        <div id="content_icons_front_page">
+          <img src="/assets/gui/brush.svg" alt="" id="icono1" />
+          <img src="/assets/gui/color.svg" alt="" id="icono2" />
+          <div class="info_icon">
+            <img src="/assets/gui/check.svg" alt="" />
+            <p>100+<br />Complete Proyect</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <article>
+        <div>
+          <h2>Misión</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+            necessitatibus aliquam adipisci pariatur distinctio velit. Placeat
+            minus quidem, voluptates, qui odio sequi sapiente, ad blanditiis
+            asperiores aut aliquam. Voluptatum, non.
+          </p>
+        </div>
+        <div>
+          <img src="/assets/1.jpg" alt="" />
+        </div>
+      </article>
+      <section class="section_class_1" id="more">
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <!-- 
+          <img src="/assets/1.jpg" alt="" />
+          -->
+          <div class="about_clients">
+            <h2>+100</h2>
+            <h3>Clientes</h3>
+            <div class="info_satisfaction">
+              <h3>100%</h3>
+              <h4>Satisfacción</h4>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <h2>My Advantage</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            tenetur eaque voluptatum totam sint sunt, qui minus doloribus
+            maiores quibusdam quisquam cupiditate impedit doloremque blanditiis
+            quis vel fuga distinctio nemo!
+          </p>
+          <div class="content_color_cards">
+            <div class="card" data-aos="fade-up" data-aos-duration="1500">
+              <h2 id="counter_1">0%</h2>
+              <h3>Figma</h3>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1600">
+              <h2 id="counter_2">0%</h2>
+              <h3>Sketch</h3>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1700">
+              <h2 id="counter_3">0%</h2>
+              <h3>Photoshop</h3>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1800">
+              <h2 id="counter_4">0%</h2>
+              <h3>Ilustrator</h3>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1900">
+              <h2 id="counter_5">0%</h2>
+              <h3>WordPress</h3>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="2000">
+              <h2 id="counter_6">0%</h2>
+              <h3>ReactJS</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_class_2">
+        <h2>Popular Services</h2>
+        <p data-aos-duration="1500" data-aos="fade-up">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et alias
+          sequi impedit beatae harum esse vero cumque labore in voluptate.
+        </p>
+        <div class="content_cards" data-aos="fade-up">
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+          <div class="card_type_2">
+            <div>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              laboriosam?
+            </p>
+            <a href="">
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+              </span>
+              <hr />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--
+      <section class="section_class_3">
+        <h2 data-aos="fade-up" data-aos-duration="1500">My Work Experience</h2>
+        <p data-aos="fade-up" data-aos-duration="1500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta vel
+          iure aut aspernatur, corrupti voluptates.
+        </p>
+        <div
+          class="content_cards_horizontal"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="card_horizontal">
+            <h3>2021-2022</h3>
+            <img src="/assets/gui/brush.svg" alt="" />
+            <div>
+              <h3>Lorem, ipsum dolor.</h3>
+              <h5>Lorem ipsum dolor sit.</h5>
+            </div>
+            <a href=""
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> ir al
+              sitio</a
+            >
+          </div>
+
+          <div class="card_horizontal">
+            <h3>2020-2019</h3>
+            <img src="/assets/gui/check.svg" alt="" />
+            <div>
+              <h3>Lorem, ipsum dolor.</h3>
+              <h5>Lorem ipsum dolor sit.</h5>
+            </div>
+            <a href=""
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> ir al
+              sitio</a
+            >
+          </div>
+
+          <div class="card_horizontal">
+            <h3>2017-2018</h3>
+            <img src="/assets/gui/color.svg" alt="" />
+            <div>
+              <h3>Lorem, ipsum dolor.</h3>
+              <h5>Lorem ipsum dolor sit.</h5>
+            </div>
+            <a href=""
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> ir al
+              sitio</a
+            >
+          </div>
+
+          <div class="card_horizontal">
+            <h3>2015-2016</h3>
+            <img src="/assets/gui/computer.svg" alt="" />
+            <div>
+              <h3>Lorem, ipsum dolor.</h3>
+              <h5>Lorem ipsum dolor sit.</h5>
+            </div>
+            <a href=""
+              ><i class="fa fa-arrow-right" aria-hidden="true"></i> ir al
+              sitio</a
+            >
+          </div>
+        </div>
+      </section>
+       -->
+      <section>
+        <div class="datos_section">
+          <div>
+            <h2>My Work Experience</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              ad cum et dolores dicta nisi.
+            </p>
+          </div>
+          <div>
+            <img src="/assets/gui/computer.svg" alt="" />
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="/assets/gui/images/1.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="/assets/gui/images/2.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="/assets/gui/images/3.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="/assets/gui/images/4.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true, // Hacer que el carrusel sea infinito
+            cssMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            autoplay: {
+              delay: 3000, // Cambiar cada 3 segundos
+              disableOnInteraction: false,
+            },
+            mousewheel: true,
+            keyboard: true,
+            breakpoints: {
+              400: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 2, // 3 slides visibles en pantallas mayores a 768px
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3, // 4 slides visibles en pantallas mayores a 1024px
+                spaceBetween: 40,
+              },
+            },
+          });
+        </script>
+      </section>
+      <section>
+        <div class="content_spotify">
+          <div class="info">
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Similique, officia.
+            </h3>
+          </div>
+          <a href="#" class="content_img">
+            <img src="/assets/gui/spotify.svg" alt="" />
+            <h4>
+              Visitar Podcast
+              <i class="fa fa-external-link"></i>
+            </h4>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="/src/js/contadores.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

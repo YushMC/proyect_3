@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="566"
+   viewBox="0 0 285.75 149.75417"
+   version="1.1"
+   id="svg48204"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="background2.svg"
+   inkscape:export-filename="Secondbackground.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview48206"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46769781"
+     inkscape:cx="547.36198"
+     inkscape:cy="230.91834"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs48201">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter55072"
+       x="-0.53941345"
+       y="-0.65273559"
+       width="2.0788269"
+       height="2.3054712">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="18.225898"
+         id="feGaussianBlur55074" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="font-variation-settings:'wght' 700;opacity:0.9;fill:#262626;fill-opacity:1;stroke:none;stroke-width:0.401534;stroke-opacity:0.39;paint-order:stroke markers fill"
+       id="rect49466"
+       width="285.79092"
+       height="149.86984"
+       x="0.0004347825"
+       y="-0.062068421" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Capa 2">
+    <ellipse
+       style="font-variation-settings:'wght' 700;opacity:0.9;fill:#91a8d1;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-opacity:0.39;paint-order:stroke markers fill;filter:url(#filter55072)"
+       id="path51388"
+       cx="227.41714"
+       cy="127.16653"
+       rx="40.731426"
+       ry="33.659996" />
+    <ellipse
+       style="font-variation-settings:'wght' 700;opacity:0.9;fill:#91a8d1;fill-opacity:1;stroke:#ffffff;stroke-width:0.4;stroke-opacity:0.39;paint-order:stroke markers fill;filter:url(#filter55072)"
+       id="ellipse55802"
+       cx="41.862865"
+       cy="43.277145"
+       rx="40.731426"
+       ry="33.659996"
+       transform="matrix(0.63550348,0,0,0.63550348,5.3270706,-14.774202)" />
+  </g>
+</svg>
