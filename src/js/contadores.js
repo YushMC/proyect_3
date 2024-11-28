@@ -6,6 +6,9 @@ const targetPercentage_4 = 77;
 const targetPercentage_5 = 43;
 const targetPercentage_6 = 37;
 
+const targetPercentage_7 = 100;
+const targetPercentage_8 = 100;
+
 const duration = 2000; // Duración en milisegundos (2 segundos)
 const intervalTime = 50; // Tiempo entre incrementos en milisegundos
 

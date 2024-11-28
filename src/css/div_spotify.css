@@ -1,0 +1,96 @@
+/*  spotify */
+.content_spotify {
+  padding: 4%;
+  background-color: #1ed75f86;
+  border: 10px solid transparent;
+  border-radius: 10px;
+
+  border-image-source: conic-gradient(from var(--a), #1ed75f, #4ed37d, #8fd8aa);
+  border-image-slice: 2;
+  border-image-width: 0.25rem;
+  border-image-outset: 8px;
+  animation: move 2s infinite linear;
+  border-image-repeat: round;
+  transition: all 0.3s linear !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_spotify:hover {
+  background-color: #1ed75f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  border-image-width: 1rem;
+  box-shadow: inset 0px 0px 60px 10px rgba(8, 8, 8, 0.8),
+    0px 0px 50px 12px rgba(240, 248, 255, 0.623);
+}
+.content_img {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s linear;
+  padding: 1% 2%;
+  text-decoration: none;
+  color: #000;
+}
+.content_spotify:hover .content_img {
+  background: var(--background_color_transparente);
+  border-radius: 10px;
+  border: 2px solid var(--enfasis_transparente);
+  animation: respiracion infinite 1.5s ease-in-out;
+  color: #fff;
+}
+.content_spotify img {
+  transition: all 0.3s linear;
+}
+@keyframes respiracion {
+  0% {
+    transform: scale(1) translate(0);
+  }
+  25% {
+    transform: scale(1.1) translate(-1px, 0px);
+  }
+  50% {
+    transform: scale(1.1) translate(1px, 0px);
+  }
+  75% {
+    transform: scale(1.1) translate(-1px, 0px);
+  }
+  100% {
+    transform: translate(0) scale(1);
+  }
+}
+.content_spotify h3 {
+  transition: all 0.3s linear;
+}
+.content_spotify:hover h3 {
+  transform: scale(1.1);
+}
+.content_spotify img {
+  filter: drop-shadow(3px 5px 10px #000000);
+}
+@media screen and (max-width: 600px) {
+  .content_spotify {
+    width: 100%;
+    border-image-slice: 1 1 1 1;
+    overflow: visible;
+    border-image-repeat: initial;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content_spotify:hover {
+    border-image-width: 0.8rem;
+  }
+  .content_img {
+    width: 80%;
+    margin-top: 10%;
+    text-wrap: nowrap;
+  }
+  .content_spotify h3 {
+    text-align: center;
+    margin: 5%;
+  }
+}

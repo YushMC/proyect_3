@@ -1,0 +1,128 @@
+.section_class_2 {
+  width: 100%;
+  padding: 3% 10%;
+  background-image: url("../../assets/Secondbackground.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_class_2 p {
+  color: #ffffffbe;
+}
+.content_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  margin: 2% 0;
+  padding: 4% 0;
+}
+.card_type_2 {
+  padding: 20% 3%;
+  border-radius: 5px;
+  border: 2px solid var(--enfasis_transparente);
+  background: var(--background_color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+.card_type_2:hover {
+  background: var(--enfasis_transparente);
+  color: #000;
+  scale: 1.05;
+}
+.card_type_2 div {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+  background-color: rgba(240, 248, 255, 0.623);
+  padding: 8%;
+  border-radius: 100%;
+  transition: all 0.3s linear;
+}
+.card_type_2 div:hover {
+  background: var(--background_color);
+}
+.card_type_2 div:hover i {
+  color: var(--enfasis);
+}
+.card_type_2 h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.card_type_2 p {
+  color: #fff;
+  margin: 4%;
+  font-weight: 300;
+  transition: all 0.3s linear;
+}
+.card_type_2:hover p {
+  color: #000;
+}
+.card_type_2 a {
+  color: #fff;
+  margin-top: 5%;
+  transition: all 1s linear;
+  display: flex;
+  flex-direction: column;
+}
+.card_type_2:hover a {
+  color: #000;
+}
+.card_type_2 a:hover {
+  color: #000;
+  transform: scale(1.1);
+}
+.card_type_2 span {
+  text-wrap: nowrap;
+}
+.card_type_2 span i {
+  margin: 0 2%;
+}
+.card_type_2 hr {
+  border: none;
+  height: 2px;
+  background: #000;
+  width: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s linear;
+}
+.card_type_2 a:hover hr {
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+.card_type_2 a:hover i {
+  animation: caminar infinite 2s ease-in-out;
+}
+
+@keyframes caminar {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_type_2 {
+    margin-top: 5%;
+  }
+}
