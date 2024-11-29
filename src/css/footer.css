@@ -167,9 +167,21 @@ footer > div:last-child h3 {
   .redes_sociales a {
     width: 100%;
     text-align: center;
+    margin: 8% 0;
+    border-radius: 10px;
+    border-image-source: conic-gradient(
+      from var(--a),
+      var(--enfasis),
+      var(--enfasis_transparente_2)
+    );
+    border-image-slice: 2;
+    border-image-width: 0.25rem;
+    border-image-outset: 8px;
+    animation: move 5s infinite cubic-bezier(0, 0.81, 1, 0.11);
   }
-  .redes_sociales > a:last-child {
-    margin-top: 5%;
+  .redes_sociales a span {
+    visibility: visible;
+    opacity: 1;
   }
   footer > div:first-child div:nth-child(2),
   footer > div:first-child div:nth-child(3) {
