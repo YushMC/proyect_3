@@ -47,7 +47,8 @@
 .content_logo_front_page > img {
   mask-image: linear-gradient(black 60%, transparent);
   width: 100%;
-  aspect-ratio: 3/4;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 
@@ -66,12 +67,12 @@
 #icono1 {
   position: absolute;
   right: -5%;
-  top: 65%;
+  top: 60%;
 }
 #icono2 {
   position: absolute;
   top: 10% !important;
-  right: 0;
+  right: 10%;
 }
 .info_icon {
   position: absolute !important;
@@ -114,6 +115,9 @@
     flex-direction: column;
     padding: 15% 0;
   }
+  .content_logo_front_page {
+    margin-top: 10%;
+  }
   #content_icons_front_page {
     width: 80%;
   }
@@ -121,11 +125,15 @@
     width: 50px;
   }
   #icono2 {
-    top: 20% !important;
+    top: -10% !important;
+  }
+  #icono1 {
+    right: -32% !important;
   }
   .info_icon {
-    top: 60% !important;
-    left: 0 !important;
+    width: 80% !important;
+    top: 90% !important;
+    left: -15% !important;
   }
   .info_icon p {
     font-size: 0.8rem;

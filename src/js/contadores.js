@@ -1,12 +1,12 @@
 // Configuración del contador
-const targetPercentage_1 = 98; // Cambia esto al porcentaje deseado
-const targetPercentage_2 = 92;
-const targetPercentage_3 = 88;
-const targetPercentage_4 = 77;
-const targetPercentage_5 = 43;
-const targetPercentage_6 = 37;
+const targetPercentage_1 = 100; // Cambia esto al porcentaje deseado
+const targetPercentage_2 = 100;
+const targetPercentage_3 = 100;
+const targetPercentage_4 = 100;
+const targetPercentage_5 = 100;
+const targetPercentage_6 = 100;
 
-const targetPercentage_7 = 100;
+const targetPercentage_7 = 200;
 const targetPercentage_8 = 100;
 
 const duration = 2000; // Duración en milisegundos (2 segundos)
@@ -30,6 +30,12 @@ let currentPercentage_5 = 0;
 const counterElement_6 = document.getElementById("counter_6");
 let currentPercentage_6 = 0;
 
+const counterElement_7 = document.getElementById("counter_7");
+let currentPercentage_7 = 0;
+
+const counterElement_8 = document.getElementById("counter_8");
+let currentPercentage_8 = 0;
+
 // Cálculo del incremento por cada intervalo
 const step_1 = (targetPercentage_1 / duration) * intervalTime;
 const step_2 = (targetPercentage_2 / duration) * intervalTime;
@@ -37,6 +43,8 @@ const step_3 = (targetPercentage_3 / duration) * intervalTime;
 const step_4 = (targetPercentage_4 / duration) * intervalTime;
 const step_5 = (targetPercentage_5 / duration) * intervalTime;
 const step_6 = (targetPercentage_6 / duration) * intervalTime;
+const step_7 = (targetPercentage_7 / duration) * intervalTime;
+const step_8 = (targetPercentage_8 / duration) * intervalTime;
 
 const interval = setInterval(() => {
   currentPercentage_1 += step_1;
@@ -125,5 +133,35 @@ const interva6 = setInterval(() => {
   // Detener el intervalo cuando se alcance el porcentaje objetivo
   if (currentPercentage_6 >= targetPercentage_6) {
     clearInterval(interva6);
+  }
+}, intervalTime);
+
+const interva7 = setInterval(() => {
+  currentPercentage_7 += step_7;
+
+  // Redondear y actualizar el valor en pantalla
+  counterElement_7.textContent = `+${Math.min(
+    Math.round(currentPercentage_7),
+    targetPercentage_7
+  )}M`;
+
+  // Detener el intervalo cuando se alcance el porcentaje objetivo
+  if (currentPercentage_7 >= targetPercentage_7) {
+    clearInterval(interva7);
+  }
+}, intervalTime);
+
+const interva8 = setInterval(() => {
+  currentPercentage_8 += step_8;
+
+  // Redondear y actualizar el valor en pantalla
+  counterElement_8.textContent = `= ${Math.min(
+    Math.round(currentPercentage_8),
+    targetPercentage_8
+  )}%`;
+
+  // Detener el intervalo cuando se alcance el porcentaje objetivo
+  if (currentPercentage_8 >= targetPercentage_8) {
+    clearInterval(interva8);
   }
 }, intervalTime);

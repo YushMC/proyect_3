@@ -11,7 +11,7 @@ article {
   width: 100%;
   padding: 3% 10%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   gap: 2%;
 }
 article > div {
@@ -23,7 +23,7 @@ article > div {
 }
 article > div > img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 9/16;
   object-fit: cover;
   border-radius: 10px;
   border: 30px solid var(--enfasis_transparente);
@@ -33,7 +33,11 @@ article > div > img {
 article > div:hover > img {
   transform: rotate(2deg) translateX(5px) scale(1.05);
 }
-
+.section_comments {
+  background-image: url("../../assets/CirculosAhorasi.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @keyframes move {
   from {
     --a: 0deg;

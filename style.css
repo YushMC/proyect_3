@@ -12,7 +12,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -56,6 +58,7 @@ p {
   .section_class_2 > h2,
   article > div > h2,
   section > div > h2 {
+    width: 90%;
     position: sticky;
     top: 12%;
     background: linear-gradient(

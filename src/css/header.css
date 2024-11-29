@@ -151,11 +151,11 @@ nav a {
     flex-direction: column;
     width: 100%;
     justify-content: start;
-    align-items: start;
-    background: var(--enfasis_transparente);
+    background: var(--enfasis);
     padding: 1% 2%;
-    backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(50px) !important;
     transition: all 0.3s linear;
+    box-shadow: 0px 8px 10px 1px rgba(255, 255, 255, 0.3);
   }
   .content_header nav label {
     display: none;
@@ -175,13 +175,17 @@ nav a {
     position: relative;
     background: none;
     border: none;
+    display: none;
+  }
+  nav div:hover div {
+    display: flex;
   }
   nav div:hover div {
     border: none;
   }
   nav div:hover {
-    border: 2px solid var(--background_color);
-    background: var(--enfasis);
+    border: 1px solid var(--background_color);
+    background: var(--background_color);
   }
   .content_buttons_action {
     width: 50%;
@@ -195,5 +199,13 @@ nav a {
   }
   .content_buttons_action span {
     display: none;
+  }
+  #menu_2 div {
+    display: none;
+  }
+  #menu_2:hover div {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
   }
 }

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="src/css/seccion_3.css" />
     <link rel="stylesheet" href="src/css/div_spotify.css" />
     <link rel="stylesheet" href="src/css/section_4.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
     <!-- API DE SWIPER JS-->
     <link
       rel="stylesheet"
@@ -58,19 +59,12 @@
         <input type="checkbox" id="mostrarMenu" />
         <nav>
           <div id="menu_1">
-            <a href=""> <i class="fa-solid fa-house"></i>Inicio</a
-            ><label for="check">˅</label>
-            <input type="checkbox" name="" id="check" />
-            <div>
-              <a href="">Ruta 1</a>
-              <a href="">Ruta 2</a>
-              <a href="">Ruta 3</a>
-            </div>
+            <a href="#inicio"> <i class="fa-solid fa-house"></i>Inicio</a>
           </div>
-          <div><a href="Información">Información</a></div>
+          <div><a href="#mas-informacion">Información</a></div>
 
           <div id="menu_2">
-            <a href="">Servicios</a><label for="check2">˅</label>
+            <a href="#">Servicios</a><label for="check2">˅</label>
             <input type="checkbox" name="" id="check2" />
             <div>
               <a href="">Ruta 1</a>
@@ -79,8 +73,9 @@
             </div>
           </div>
           <div id="menu_3">
-            <a href="">Testimonios</a>
+            <a href="#testimonios">Testimonios</a>
           </div>
+          <!-- 
           <div id="menu_4">
             <a href="">Blog</a><label for="check4">˅</label>
             <input type="checkbox" name="" id="check4" />
@@ -89,10 +84,11 @@
               <a href="">Populares</a>
             </div>
           </div>
+          -->
         </nav>
       </div>
     </header>
-    <div class="front_page">
+    <div class="front_page" id="inicio">
       <div data-aos="fade-right" data-aos-duration="1500">
         <h2>Hola,</h2>
         <h1>Soy Kathya</h1>
@@ -104,7 +100,7 @@
           con tu audiencia
         </p>
         <div class="content_buttons_action">
-          <a href="#about">
+          <a href="#mas-informacion">
             Ver Más <i class="fa fa-arrow-down" aria-hidden="true"></i>
           </a>
         </div>
@@ -116,20 +112,20 @@
       >
         <img src="assets/fotos/foto_1.png" alt="Imagen" />
         <div id="content_icons_front_page">
-          <img src="assets/gui/brush.svg" alt="" id="icono1" />
-          <img src="assets/gui/color.svg" alt="" id="icono2" />
+          <img src="assets/gui/mundo.svg" alt="" id="icono1" />
+          <img src="assets/gui/graficos.svg" alt="" id="icono2" />
           <div class="info_icon">
             <img src="assets/gui/check.svg" alt="" />
-            <p>100+<br />Complete Proyect</p>
+            <p>+200M<br />Ciudadanos conectando!</p>
           </div>
         </div>
       </div>
     </div>
     <main>
-      <article>
+      <article data-aos="fade-up" data-aos-duration="1500" id="mas-informacion">
         <div>
-          <h2>Sobre Mí</h2>
-          <p>
+          <h2 data-aos="fade-right" data-aos-duration="1500">Sobre Mí</h2>
+          <p data-aos="fade-up" data-aos-duration="1500">
             <i>
               "Lo que parecia una tragedia se convirtió en el inicio de un viaje
               increible"
@@ -157,8 +153,8 @@
             para marcar la diferencia entre tanta competencia y monetizar desde
             cualquier parte del mundo.
           </p>
-          <h2>Visión</h2>
-          <p>
+          <h2 data-aos="fade-right" data-aos-duration="1500">Visión</h2>
+          <p data-aos="fade-up" data-aos-duration="1500">
             En nuestro curso , aprenderás a conectar de forma auténtica,
             aprovechar el poder de las redes sociales y transformar tu pasión en
             un impacto real. ¡Es hora de potencializar tus ideas y aprender
@@ -172,23 +168,33 @@
           <img src="assets/fotos/foto_2.png" alt="" />
         </div>
       </article>
-      <section class="section_class_1" id="more">
+      <hr
+        style="
+          width: 80%;
+          background: var(--enfasis);
+          border: none;
+          height: 3px;
+        "
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      />
+      <section class="section_class_1">
         <div data-aos="fade-up" data-aos-duration="2000">
           <!-- 
           <img src="/assets/1.jpg" alt="" />
           -->
           <div class="about_clients">
-            <h2>+200</h2>
+            <h2 id="counter_7">+0</h2>
             <h3>Ciudadanos Conectando</h3>
             <div class="info_satisfaction">
-              <h3>= 100%</h3>
+              <h3 id="counter_8">= 0%</h3>
               <h4>Satisfacción</h4>
               <h4></h4>
             </div>
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500">
-          <h2>My Advantage</h2>
+          <h2>Beneficios</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
             tenetur eaque voluptatum totam sint sunt, qui minus doloribus
@@ -198,50 +204,142 @@
           <div class="content_color_cards">
             <div class="card" data-aos="fade-up" data-aos-duration="1500">
               <h2 id="counter_1">0%</h2>
-              <h3>Figma</h3>
+              <h3>...</h3>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="1600">
               <h2 id="counter_2">0%</h2>
-              <h3>Sketch</h3>
+              <h3>...</h3>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="1700">
               <h2 id="counter_3">0%</h2>
-              <h3>Photoshop</h3>
+              <h3>...</h3>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="1800">
               <h2 id="counter_4">0%</h2>
-              <h3>Ilustrator</h3>
+              <h3>...</h3>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="1900">
               <h2 id="counter_5">0%</h2>
-              <h3>WordPress</h3>
+              <h3>...</h3>
             </div>
             <div class="card" data-aos="fade-up" data-aos-duration="2000">
               <h2 id="counter_6">0%</h2>
-              <h3>ReactJS</h3>
+              <h3>...</h3>
             </div>
           </div>
         </div>
       </section>
+      <section
+        class="section_comments"
+        id="testimonios"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="datos_section">
+          <div>
+            <h2>Testimonios</h2>
+            <p>
+              Descubre las historias de éxito y cómo han transformado sus vidas.
+            </p>
+          </div>
+          <div>
+            <img src="assets/gui/chat.svg" alt="" />
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="assets/fotos/testimonios/1.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="assets/fotos/testimonios/2.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="assets/fotos/testimonios/3.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content_img_swiper">
+                <img src="assets/fotos/testimonios/4.jpg" alt="" />
+              </div>
+              <div class="content_info_swiper">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                  veritatis.
+                </p>
+                <a href="">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            loop: true, // Hacer que el carrusel sea infinito
+            cssMode: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            autoplay: {
+              delay: 3000, // Cambiar cada 3 segundos
+              disableOnInteraction: false,
+            },
+            mousewheel: true,
+            keyboard: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+          });
+        </script>
+      </section>
       <section class="section_class_2">
-        <h2>Popular Services</h2>
-        <p data-aos-duration="1500" data-aos="fade-up">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et alias
-          sequi impedit beatae harum esse vero cumque labore in voluptate.
-        </p>
-        <div class="content_cards" data-aos="fade-up">
+        <h2>Servicios</h2>
+        <div class="content_cards" data-aos="fade-up" data-aos-duration="1500">
           <div class="card_type_2">
             <div>
               <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
+            <h3>¡DESARROLLA TU MARCA PERSONAL EN INSTAGRAM!</h3>
+            <p>Curso de redes sociales NIVEL 1</p>
             <a href="">
               <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Más
+                Información
               </span>
               <hr />
             </a>
@@ -250,14 +348,12 @@
             <div>
               <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
+            <h3>¡CREA UN CONTENIDO PRODUCTIVO Y GLOBAL!</h3>
+            <p>Curso de redes sociales NIVEL 2</p>
             <a href="">
               <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Más
+                Información
               </span>
               <hr />
             </a>
@@ -266,62 +362,11 @@
             <div>
               <i class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
+            <h3>Asesoramiento Personalizado (1 a 1)</h3>
             <a href="">
               <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
-              </span>
-              <hr />
-            </a>
-          </div>
-          <div class="card_type_2">
-            <div>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
-            <a href="">
-              <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
-              </span>
-              <hr />
-            </a>
-          </div>
-          <div class="card_type_2">
-            <div>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
-            <a href="">
-              <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
-              </span>
-              <hr />
-            </a>
-          </div>
-          <div class="card_type_2">
-            <div>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-              laboriosam?
-            </p>
-            <a href="">
-              <span>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i> Learn More
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Más
+                Información
               </span>
               <hr />
             </a>
@@ -394,121 +439,32 @@
         </div>
       </section>
        -->
-      <section>
-        <div class="datos_section">
-          <div>
-            <h2>My Work Experience</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              ad cum et dolores dicta nisi.
-            </p>
-          </div>
-          <div>
-            <img src="assets/gui/computer.svg" alt="" />
-          </div>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="content_img_swiper">
-                <img src="assets/gui/images/1.jpg" alt="" />
-              </div>
-              <div class="content_info_swiper">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                  veritatis.
-                </p>
-                <a href="">Leer más</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content_img_swiper">
-                <img src="assets/gui/images/2.jpg" alt="" />
-              </div>
-              <div class="content_info_swiper">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                  veritatis.
-                </p>
-                <a href="">Leer más</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content_img_swiper">
-                <img src="assets/gui/images/3.jpg" alt="" />
-              </div>
-              <div class="content_info_swiper">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                  veritatis.
-                </p>
-                <a href="">Leer más</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content_img_swiper">
-                <img src="assets/gui/images/4.jpg" alt="" />
-              </div>
-              <div class="content_info_swiper">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
-                  veritatis.
-                </p>
-                <a href="">Leer más</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            loop: true, // Hacer que el carrusel sea infinito
-            cssMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-              el: ".swiper-pagination",
-            },
-            autoplay: {
-              delay: 3000, // Cambiar cada 3 segundos
-              disableOnInteraction: false,
-            },
-            mousewheel: true,
-            keyboard: true,
-            breakpoints: {
-              400: {
-                slidesPerView: 1,
-                spaceBetween: 30,
-              },
-              768: {
-                slidesPerView: 2, // 3 slides visibles en pantallas mayores a 768px
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 3, // 4 slides visibles en pantallas mayores a 1024px
-                spaceBetween: 40,
-              },
-            },
-          });
-        </script>
-      </section>
-      <section>
+
+      <section
+        class="section_class_2"
+        data-aos-duration="1500"
+        data-aos="fade-up"
+      >
         <div class="content_spotify">
           <div class="info">
-            <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique, officia.
-            </h3>
+            <h3>Effe</h3>
+            <p>
+              ¿Que mujer requieres ser para cumplir tus objetivos? Las mujeres
+              cruzamos por diferentes retos diarios, estamos conscientes que
+              nuestra comunicación interna se ve afectada y por consecuencia
+              nuestra forma de mostrarnos al mundo. De la voz de más mujeres te
+              compartiremos las decisiones más importantes que tuvieron que
+              tomar en su vida para lograr tener el éxito actual. Inspirarte y
+              brindarte las herramientas necesarias para que continúes tu
+              crecimiento es nuestro objetivo. Creemos firmemente que las
+              respuestas están en tu interior.
+            </p>
           </div>
-          <a href="#" class="content_img">
+          <a
+            href="https://open.spotify.com/show/0c13hsXDfdnoIPusxMs8X7?si=TtldP6_TQoKkzlrkP9oKqg"
+            target="_blank"
+            class="content_img"
+          >
             <img src="assets/gui/spotify.svg" alt="" />
             <h4>
               Visitar Podcast
@@ -517,6 +473,7 @@
           </a>
         </div>
       </section>
+      <!--
       <section class="section_class_2">
         <h2>Precios</h2>
         <p>
@@ -526,7 +483,7 @@
         <div class="content_cards_costs">
           <div class="card">
             <h3 class="title_card">Basic</h3>
-            <h3><span>$400</span> / per month</h3>
+            <h3><span>$200</span> / per month</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <hr />
             <ul>
@@ -554,6 +511,79 @@
           </div>
         </div>
       </section>
+       -->
+      <footer data-aos-duration="1500" data-aos="fade-up">
+        <div>
+          <div>
+            <div class="info_website">
+              <img src="assets/logo.svg" alt="" />
+              <h1>WebSite</h1>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+              itaque, doloribus nesciunt accusantium obcaecati tempore fugit
+              repellat odit hic est.
+            </p>
+            <div class="redes_sociales">
+              <a
+                href="https://www.instagram.com/kathyalizethc/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i> <span>@KATHYALIZETHC</span>
+              </a>
+              <a href="https://www.facebook.com/kathya.lizeth" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                <span>Lizeth Cortes Diaz</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3>Navegación</h3>
+            <ul>
+              <li>
+                <a href="#inicio">Inicio</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#mas-informacion">Información</a>
+                <hr />
+              </li>
+              <li>
+                <a href="">Servicios</a>
+                <hr />
+              </li>
+              <li>
+                <a href="#testimonios">Testimonios</a>
+                <hr />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Todos los servicios</h3>
+            <ul>
+              <li>
+                <a href="#inicio"
+                  >¡DESARROLLA TU MARCA PERSONAL EN INSTAGRAM!</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a href="#mas-informacion"
+                  >¡CREA UN CONTENIDO PRODUCTIVO Y GLOBAL!</a
+                >
+                <hr />
+              </li>
+              <li>
+                <a href="">Asesoramiento Personalizado (1 a 1) </a>
+                <hr />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Copyright @2024 Effe. Todos los derechos reservados.</h3>
+        </div>
+      </footer>
     </main>
   </body>
   <script src="src/js/contadores.js"></script>
