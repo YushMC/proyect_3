@@ -1,10 +1,12 @@
 .front_page {
-  width: 80%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2%;
   margin: auto;
-  padding-bottom: 10%;
+  padding: 4% 10%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
 }
 .front_page div {
   width: 100%;
@@ -133,7 +135,11 @@
     left: 0% !important;
   }
 }
-
+@media screen and (max-width: 850px) and (min-width: 601px) {
+  .front_page div h3 {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .front_page {
     display: flex;
