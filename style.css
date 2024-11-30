@@ -50,7 +50,7 @@ h2 {
 p {
   color: #ffffffbe;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     background-image: url("assets/Principal\ -\ background\ -\ vertical.svg");
   }

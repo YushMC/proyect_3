@@ -53,7 +53,7 @@ article > div:hover > img {
   initial-value: 0deg;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   article {
     display: flex;
     flex-direction: column;

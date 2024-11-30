@@ -5,6 +5,7 @@ header {
   z-index: 100;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
 }
 .content_header {
   width: 80%;
