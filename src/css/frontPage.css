@@ -29,7 +29,7 @@
 .front_page h3 {
   text-transform: uppercase;
   font-size: 1.8rem;
-  color: var(--enfasis_transparente);
+  color: #fff;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 .front_page p {
