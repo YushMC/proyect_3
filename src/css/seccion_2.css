@@ -1,6 +1,6 @@
 .section_class_2 {
   width: 100%;
-  padding: 3% 10%;
+  padding: 3% 20%;
   background-image: url("../../assets/Secondbackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,13 +23,15 @@
   padding: 4% 0;
 }
 .card_type_2 {
-  padding: 20% 3%;
+  padding: 10%;
+  height: fit-content;
   border-radius: 5px;
   border: 2px solid var(--enfasis_transparente);
   background: var(--background_color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   align-items: center;
   color: #fff;
   transition: all 0.3s linear;
@@ -107,6 +109,20 @@
 }
 .card_type_2 a:hover i {
   animation: caminar infinite 2s ease-in-out;
+}
+.buttonCardsServices {
+  border: 2px solid var(--enfasis_transparente);
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  padding: 2%;
+  transition: all 0.3s linear;
+}
+.buttonCardsServices:hover {
+  border-color: #000;
+}
+.buttonCardsServices:hover > hr {
+  display: none;
 }
 
 @keyframes caminar {

@@ -3,10 +3,11 @@ const targetPercentage_1 = 100; // Cambia esto al porcentaje deseado
 const targetPercentage_2 = 100;
 const targetPercentage_3 = 100;
 const targetPercentage_4 = 100;
+/*
 const targetPercentage_5 = 100;
 const targetPercentage_6 = 100;
-
-const targetPercentage_7 = 200;
+*/
+const targetPercentage_7 = 20;
 const targetPercentage_8 = 100;
 
 const duration = 2000; // Duración en milisegundos (2 segundos)
@@ -23,13 +24,14 @@ let currentPercentage_3 = 0;
 
 const counterElement_4 = document.getElementById("counter_4");
 let currentPercentage_4 = 0;
-
+/*
 const counterElement_5 = document.getElementById("counter_5");
 let currentPercentage_5 = 0;
 
+
 const counterElement_6 = document.getElementById("counter_6");
 let currentPercentage_6 = 0;
-
+*/
 const counterElement_7 = document.getElementById("counter_7");
 let currentPercentage_7 = 0;
 
@@ -41,8 +43,10 @@ const step_1 = (targetPercentage_1 / duration) * intervalTime;
 const step_2 = (targetPercentage_2 / duration) * intervalTime;
 const step_3 = (targetPercentage_3 / duration) * intervalTime;
 const step_4 = (targetPercentage_4 / duration) * intervalTime;
+/*
 const step_5 = (targetPercentage_5 / duration) * intervalTime;
 const step_6 = (targetPercentage_6 / duration) * intervalTime;
+*/
 const step_7 = (targetPercentage_7 / duration) * intervalTime;
 const step_8 = (targetPercentage_8 / duration) * intervalTime;
 
@@ -106,6 +110,7 @@ const interva4 = setInterval(() => {
   }
 }, intervalTime);
 
+/*
 const interva5 = setInterval(() => {
   currentPercentage_5 += step_5;
 
@@ -135,7 +140,7 @@ const interva6 = setInterval(() => {
     clearInterval(interva6);
   }
 }, intervalTime);
-
+*/
 const interva7 = setInterval(() => {
   currentPercentage_7 += step_7;
 
@@ -143,7 +148,7 @@ const interva7 = setInterval(() => {
   counterElement_7.textContent = `+${Math.min(
     Math.round(currentPercentage_7),
     targetPercentage_7
-  )}M`;
+  )}k`;
 
   // Detener el intervalo cuando se alcance el porcentaje objetivo
   if (currentPercentage_7 >= targetPercentage_7) {

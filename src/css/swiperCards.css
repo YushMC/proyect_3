@@ -43,11 +43,11 @@
   margin-top: 2%;
 }
 .content_img_swiper img {
-  width: 100%;
-  aspect-ratio: 16/9;
+  width: 55%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   object-position: top;
-  border-radius: 10px;
+  border-radius: 100%;
   mask-repeat: no-repeat;
 }
 @media screen and (min-width: 1001px) {
